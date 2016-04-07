@@ -1,3 +1,3 @@
 # tmp-site
 My personal website containing links to my social networks.
-Theme used jekyll-uno
+Template by Mark Thomas at http://codepen.io/WithAnEs/pen/fFlnL
