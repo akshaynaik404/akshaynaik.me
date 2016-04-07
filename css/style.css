@@ -1,0 +1,53 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icons {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  fill: rgba(255, 250, 250, 0);
+  stroke: #fffafa;
+  stroke-width: 2px;
+  transition: all 0.25s ease;
+}
+
+.icon:hover, .icon:focus {
+  fill: #fffafa;
+  transition: all 0.15s ease;
+}
+img {
+  border-radius: 50%;
+}
+
+.icons a {
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
