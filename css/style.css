@@ -12,10 +12,6 @@ body {
   width: 100vw;
   color: #fff;
   font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .icons {
@@ -41,7 +37,11 @@ body {
 img {
   border-radius: 50%;
 }
-
+.address {
+  flex-basis: 400px;
+  text-align: left;
+  padding-left: 120px;
+}
 .icons a {
   display: inline-block;
 }
@@ -50,4 +50,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .icons {
+    flex-wrap: wrap;
+  }
+  header {
+    flex-direction: column;
+  }
+  .address {
+    flex-basis: auto;
+    padding: 0;
+    text-align: center;
+  }
 }
