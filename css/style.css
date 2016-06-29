@@ -54,10 +54,8 @@ header {
 }
 
 .name {
-  font-size: 1em;
   display: inline;
 }
-//Mobile
 @media (max-width: 600px) {
   .icons {
     flex-wrap: wrap;
