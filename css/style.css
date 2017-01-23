@@ -1,73 +1,64 @@
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 0;
   background: #000;
+  width: 100vw;
   height: 100vh;
-  width: 100vw;
   color: #fff;
-  font-size: 16px;
+  color: #000;
   display: flex;
   align-items: center;
-}
+  justify-content: center; }
 
-.icons {
-  width: 100vw;
+.social-wrap header {
   display: flex;
-  justify-content: center;
-}
-
-.icon {
-  width: 120px;
-  height: 120px;
-  padding: 10px;
-  fill: rgba(255, 250, 250, 0);
-  stroke: #fffafa;
-  stroke-width: 2px;
-  transition: all 0.25s ease;
-}
-
-.icon:hover, .icon:focus {
-  fill: #fffafa;
-  transition: all 0.15s ease;
-}
-img {
-  border-radius: 50%;
-}
-.address {
-  flex-basis: 400px;
-  text-align: left;
-  padding-left: 120px;
-  color: #D5D1D1;
-}
-.icons a {
-  display: inline-block;
-}
-
-header {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
+  max-width: 500px;
+  padding: 0 10px; }
+  .social-wrap header #my-face img {
+    border-radius: 50%; }
+  .social-wrap header .address {
+    color: #D5D1D1; }
+    .social-wrap header .address .name {
+      display: inline; }
+.social-wrap .icons {
+  display: flex;
+  justify-content: space-between; }
+  .social-wrap .icons a {
+    display: inline-block; }
+  .social-wrap .icons .icon:focus,
+  .social-wrap .icons .icon:hover {
+    fill: #fffafa;
+    transition: all 0.15s ease; }
+  .social-wrap .icons .icon {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    fill: rgba(255, 250, 250, 0);
+    stroke: #fffafa;
+    stroke-width: 2px;
+    transition: all 0.25s ease; }
+  .social-wrap .icons .icon:first-child {
+    padding-left: 0; }
+  .social-wrap .icons .icon:last-child {
+    padding-right: 0; }
 
-.name {
-  display: inline;
-}
-@media (max-width: 600px) {
-  .icons {
+@media (max-width: 500px) {
+  body {
+    height: auto;
+    margin-top: 8px; }
+
+  .social-wrap header {
+    flex-direction: column; }
+    .social-wrap header .address {
+      text-align: center; }
+  .social-wrap .icons {
     flex-wrap: wrap;
-  }
-  header {
-    flex-direction: column;
-  }
-  .address {
-    flex-basis: auto;
-    padding: 0;
-    text-align: center;
-  }
-}
+    justify-content: center; } }
+
+/*# sourceMappingURL=style.css.map */
