@@ -1,5 +1,3 @@
-# tmp-site
-My personal website containing links to my social networks.
-Template by Mark Thomas at http://codepen.io/WithAnEs/pen/fFlnL
+Personal Website of Akshay Naik.
 
-To run locally compile style.scss and open index.html
+Live @ [http://akshaynaik.me](http://akshaynaik.me)
